@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+.spotlight {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-image: radial-gradient( circle, transparent 160px, rgba(0, 0, 0, 0.85) 400px);
+}
+
+h1 {
+    text-transform: uppercase;
+    color: wheat;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.birds__block {
+    margin-top: 200px;
+    width: 1500px;
+    position: absolute;
+    animation: bird 2s linear infinite alternate forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes bird {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 500px;
+    }
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: olivedrab;
+    margin: 3px;
+}
+
+.push {
+    float: right;
+    margin-top: 250px;
+}
+
+.elements {
+    margin-top: 250px;
+    float: right;
+    right: 100px;
+    margin-right: 270px;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: yellow;
+    margin-top: 50px;
+    float: right;
+    margin-right: 50px;
+    transition-duration: 2s;
+    transition-property: background-color;
+}
+
+.sun:hover {
+    top:2px;
+    box-shadow: 0 3px 0 rgb(124, 124, 60);
+    background-color: rgb(202, 136, 37);
+}
+
+.rain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop {
+    border-radius: 50% 0 50% 50%;
+    background: royalblue;
+    width: 30px;
+    height: 30px;
+}
+
+.blue__bird {
+    width: 50px;
+    height: 50px;
+    margin-top: 250px;
+}
